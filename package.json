@@ -1,0 +1,24 @@
+{
+	"name": "@xxhls/classnames",
+	"version": "0.0.1",
+	"type": "module",
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"check": "biome check .",
+		"check:fix": "biome check --write .",
+		"test": "vitest run",
+		"test:watch": "vitest watch",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3",
+		"@types/node": "18.11.9",
+		"typescript": "5.4.2",
+		"vite": "5.4.8",
+		"vite-plugin-dts": "4.2.3",
+		"vitest": "2.1.2"
+	}
+}
