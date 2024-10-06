@@ -16,11 +16,15 @@
 		"build": "vite build",
 		"release:patch": "npm version patch && npm publish",
 		"release:minor": "npm version minor && npm publish",
-		"release:major": "npm version major && npm publish"
+		"release:major": "npm version major && npm publish",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3",
 		"@types/node": "18.11.9",
+		"commitizen": "4.3.1",
+		"cz-conventional-changelog": "3.3.0",
+		"husky": "^9.1.6",
 		"typescript": "5.4.2",
 		"vite": "5.4.8",
 		"vite-plugin-dts": "4.2.3",
@@ -29,5 +33,10 @@
 	"publishConfig": {
 		"access": "public",
 		"registry": "https://registry.npmjs.org/"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
 	}
 }
