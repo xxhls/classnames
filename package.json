@@ -13,11 +13,11 @@
 		"test": "vitest run",
 		"test:watch": "vitest watch",
 		"build": "vite build",
-		"release:patch": "npm version patch && npm publish",
-		"release:minor": "npm version minor && npm publish",
-		"release:major": "npm version major && npm publish",
+		"release:patch": "npm version patch -m 'bump %s' && npm publish",
+		"release:minor": "npm version minor -m 'bump %s' && npm publish",
+		"release:major": "npm version major -m 'bump %s' && npm publish",
 		"release": "npm run test && npm run build && npm run release:patch && npm run release:after",
-		"release:after": "git add . && git commit -m 'chore(npm): update version' && git push --follow-tags",
+		"release:after": "git push --tags",
 		"prepare": "husky"
 	},
 	"devDependencies": {
