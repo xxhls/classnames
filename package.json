@@ -7,8 +7,9 @@
 	"types": "./dist/index.d.ts",
 	"files": ["dist"],
 	"scripts": {
-		"check": "biome check .",
-		"check:fix": "biome check --write .",
+		"check": "npm run check:biome && npm run check:tsc",
+		"check:biome": "biome check --write .",
+		"check:tsc": "tsc --noEmit ",
 		"test": "vitest run",
 		"test:watch": "vitest watch",
 		"build": "vite build",
