@@ -11,7 +11,10 @@
 		"check:fix": "biome check --write .",
 		"test": "vitest run",
 		"test:watch": "vitest watch",
-		"build": "vite build"
+		"build": "vite build",
+		"release:patch": "npm version patch && npm publish",
+		"release:minor": "npm version minor && npm publish",
+		"release:major": "npm version major && npm publish"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3",
