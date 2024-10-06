@@ -5,9 +5,7 @@
 	"license": "MIT",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"scripts": {
 		"check": "biome check .",
 		"check:fix": "biome check --write .",
