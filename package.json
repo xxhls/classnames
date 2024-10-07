@@ -17,7 +17,7 @@
 		"release:minor": "npm version minor -m 'bump %s' && npm publish",
 		"release:major": "npm version major -m 'bump %s' && npm publish",
 		"release": "npm run test && npm run build && npm run release:patch && npm run release:after",
-		"release:after": "git push --tags",
+		"release:after": "git push origin main && git push --tags",
 		"prepare": "husky"
 	},
 	"devDependencies": {
