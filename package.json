@@ -14,6 +14,7 @@
 		"type": "git",
 		"url": "https://github.com/xxhls/classnames"
 	},
+	"keywords": ["classnames"],
 	"scripts": {
 		"check": "npm run check:biome && npm run check:tsc",
 		"check:biome": "biome check --write .",
@@ -26,6 +27,7 @@
 		"release:major": "npm version major -m 'bump %s' && npm publish",
 		"release": "npm run test && npm run build && npm run release:patch && npm run release:after",
 		"release:after": "git push origin main && git push --tags",
+		"commit:update-pkg": "git add . && git commit -m 'chore(npm): update pkg.json'",
 		"prepare": "husky"
 	},
 	"devDependencies": {
