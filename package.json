@@ -3,9 +3,17 @@
 	"version": "0.0.7",
 	"type": "module",
 	"license": "MIT",
+	"author": {
+		"name": "xxhls",
+		"email": "heyq020814@qq.com"
+	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"files": ["dist"],
+	"files": ["dist", "README.md"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xxhls/classnames"
+	},
 	"scripts": {
 		"check": "npm run check:biome && npm run check:tsc",
 		"check:biome": "biome check --write .",
